@@ -105,6 +105,7 @@ jobs:
 
           # 固件压缩:
           cat >> .config <<EOF
+          CONFIG_TARGET_ROOTFS_PARTSIZE=512
           CONFIG_TARGET_IMAGES_GZIP=y
           EOF
 
